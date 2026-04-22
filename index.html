@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Christopher Hall</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+	
+/* slide in animations */
+
+@keyframes fadeSlideUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeSlideLeft{
+from{
+opacity:0;
+transform:translateX(-40px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+/* animations when opening tab */
+
+.hero img{
+animation:fadeSlideLeft 0.9s ease forwards;
+}
+
+.hero-text{
+animation:fadeSlideUp 0.9s ease forwards;
+animation-delay:0.2s;
+opacity:0;
+}
+
+.tiles{
+animation:fadeSlideUp 0.9s ease forwards;
+animation-delay:0.4s;
+opacity:0;
+}
+
+.quote-box{
+animation:fadeSlideUp 0.9s ease forwards;
+animation-delay:0.6s;
+opacity:0;
+}
+
+/* general */
+
+body{
+font-family:'Poppins', sans-serif;
+margin:0;
+background:white;
+color:#222;
+
+display:flex;
+flex-direction:column;
+height:100vh;
+}
+
+/* navigation bar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 40px;
+
+border-bottom:1px solid #eee;
+background:white;
+
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* left name */
+
+.home-name{
+font-weight:600;
+font-size:20px;
+color:#222;
+text-decoration:none;
+}
+
+.home-name:hover{
+color:#4B9CD3;
+}
+
+/* links on right */
+
+.nav-right{
+display:flex;
+gap:30px;
+}
+
+.nav-right a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+font-size:16px;
+transition:0.2s;
+}
+
+.nav-right a:hover{
+color:#4B9CD3;
+}
+
+/* main centering */
+
+.main{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding-top:40px;
+}
+
+/* me */
+
+.hero{
+display:flex;
+align-items:center;
+gap:60px;
+
+max-width:1100px;
+width:100%;
+padding:20px;
+}
+
+/* me photo */
+
+.hero img{
+width:400px;
+height:400px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* text abt me */
+
+.hero-text{
+max-width:600px;
+}
+
+/* my name */
+
+.name-row{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.hero-text h1{
+font-size:58px;
+margin:0;
+}
+
+/* linkedin icon */
+
+.name-icon{
+width:10px;
+height:10px;
+}
+
+.name-icon:hover{
+color:#2A6FA1;
+transform:translateY(-2px);
+}
+
+/* subtitle */
+
+.hero-text h2{
+font-weight:300;
+color:#666;
+margin:10px 0 15px 0;
+font-size:20px;
+}
+
+/* journey info */
+
+.journey{
+font-size:14px;
+line-height:1.6;
+color:#444;
+margin-bottom:20px;
+}
+
+/* tiles */
+
+.tiles{
+display:flex;
+gap:18px;
+}
+
+.tile{
+width:165px;
+height:90px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:17px;
+font-weight:500;
+
+text-decoration:none;
+color:white;
+
+border-radius:16px;
+
+background:#4B9CD3;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+transition:all 0.25s ease;
+}
+
+.tile:hover{
+transform:translateY(-4px);
+box-shadow:0 14px 30px rgba(0,0,0,0.2);
+}
+
+/* quote */
+
+.quote-box{
+max-width:700px;
+margin:40px auto 80px auto;
+
+padding:18px 26px;
+
+text-align:center;
+
+font-style:italic;
+font-size:18px;
+
+color:white;
+background:#2A6FA1;
+
+border-radius:12px;
+
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+.quote-author{
+display:block;
+margin-top:6px;
+font-size:14px;
+opacity:0.85;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:12px;
+border-top:1px solid #eee;
+font-size:13px;
+color:#777;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="nav-left">
+<a href="index.html" class="home-name">Christopher Hall</a>
+</div>
+
+<div class="nav-right">
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="research.html">Research</a>
+<a href="resume.html">Resume</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</nav>
+
+<div class="main">
+
+<div class="hero">
+
+<img src="final.png" alt="Christopher Hall">
+
+<div class="hero-text">
+
+<div class="name-row">
+<h1>Christopher Hall</h1>
+
+</div>
+
+<h2>Biochemistry Student • UNC Chapel Hill</h2>
+
+<div class="journey">
+<p>
+As a first-year student at UNC, I study biochemistry in the Honors Program with an interest in protein interactions. 
+</p>
+<p>
+I construct bridges between what is currently known and what is yet to be discovered. Through various projects, international experiences, and a dedication to research, I've developed a unique perspective in how molecular processes meet inclusive patient care.
+</p>
+</div>
+	
+<div class="tiles">
+<a href="about.html" class="tile">About</a>
+<a href="projects.html" class="tile">Projects</a>
+<a href="research.html" class="tile">Research</a>
+</div>
+
+</div>
+	
+</div>
+
+</div>
+
+<div class="quote-box">
+“The best discoveries are the ones you didn’t know you were looking for.”
+<span class="quote-author">— <a href="https://www.nobelprize.org/prizes/chemistry/2008/tsien/facts/" target="_blank" >Roger Y. Tsien</a></span>
+</div>
+
+<footer>
+© 2026 Christopher Hall
+</footer>
+
+</body>
+</html>
